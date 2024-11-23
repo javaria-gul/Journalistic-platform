@@ -1,0 +1,11 @@
+C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.exe.config
+C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.exe
+C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.pdb
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.csproj.AssemblyReference.cache
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.Form1.resources
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.Properties.Resources.resources
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.RoleSelectionForm.resources
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.csproj.GenerateResource.cache
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.csproj.CoreCompileInputs.cache
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.exe
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.pdb
