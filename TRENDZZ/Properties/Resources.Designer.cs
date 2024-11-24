@@ -63,6 +63,16 @@ namespace TRENDZZ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ai_generated_8782740 {
+            get {
+                object obj = ResourceManager.GetObject("ai-generated-8782740", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blockchain_7660382 {
             get {
                 object obj = ResourceManager.GetObject("blockchain-7660382", resourceCulture);
@@ -76,6 +86,26 @@ namespace TRENDZZ.Properties {
         internal static System.Drawing.Bitmap blockchain_7660382__1_ {
             get {
                 object obj = ResourceManager.GetObject("blockchain-7660382 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap digital_6228018 {
+            get {
+                object obj = ResourceManager.GetObject("digital-6228018", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap milkyway_8190232 {
+            get {
+                object obj = ResourceManager.GetObject("milkyway-8190232", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

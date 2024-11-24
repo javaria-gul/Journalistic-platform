@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\roleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:roleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\roleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:roleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserSession.cs",
+              "RelativeDocumentMoniker": "UserSession.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserSession.cs",
+              "RelativeToolTip": "UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T17:27:36.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignupPage.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
+              "RelativeDocumentMoniker": "SignupPage.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
+              "RelativeToolTip": "SignupPage.cs",
+              "ViewState": "AgIAAAQAAAAAMjMzMzMLwBMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T17:07:57.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignupPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
+              "RelativeDocumentMoniker": "SignupPage.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs [Design]",
+              "RelativeToolTip": "SignupPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T16:52:08.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAADgAAAAA9v/////7v0oAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T14:41:41.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleSelectionForm.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs",
+              "RelativeDocumentMoniker": "RoleSelectionForm.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs",
+              "RelativeToolTip": "RoleSelectionForm.cs",
+              "ViewState": "AgIAAAQAAACgLTMzMzMrwBoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:51:52.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAAkAAACAJTMzMzMLwB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:32:34.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:32:24.219Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:22:36.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoleSelectionForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs",
+              "RelativeDocumentMoniker": "RoleSelectionForm.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs [Design]",
+              "RelativeToolTip": "RoleSelectionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T09:57:01.11Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAACYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T21:47:29.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T21:27:49.203Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

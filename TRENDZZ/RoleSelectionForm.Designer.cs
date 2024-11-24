@@ -60,6 +60,7 @@
             this.AdminButton.TabIndex = 1;
             this.AdminButton.Text = "ADMIN";
             this.AdminButton.UseVisualStyleBackColor = false;
+            this.AdminButton.Click += new System.EventHandler(this.Adminbutton_Click);
             // 
             // JournalistButton
             // 
@@ -72,18 +73,20 @@
             this.JournalistButton.TabIndex = 2;
             this.JournalistButton.Text = "JOURNALIST";
             this.JournalistButton.UseVisualStyleBackColor = false;
+            this.JournalistButton.Click += new System.EventHandler(this.JournalistButton_clicked);
             // 
             // UserButton
             // 
             this.UserButton.BackColor = System.Drawing.Color.Transparent;
             this.UserButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserButton.ForeColor = System.Drawing.Color.OliveDrab;
-            this.UserButton.Location = new System.Drawing.Point(394, 418);
+            this.UserButton.Location = new System.Drawing.Point(399, 412);
             this.UserButton.Name = "UserButton";
-            this.UserButton.Size = new System.Drawing.Size(177, 67);
+            this.UserButton.Size = new System.Drawing.Size(172, 67);
             this.UserButton.TabIndex = 3;
             this.UserButton.Text = "USER";
             this.UserButton.UseVisualStyleBackColor = false;
+            this.UserButton.Click += new System.EventHandler(this.UserButton_clicked);
             // 
             // RoleSelectionForm
             // 
