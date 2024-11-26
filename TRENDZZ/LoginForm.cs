@@ -97,12 +97,6 @@ namespace TRENDZZ
             }
 
         }
-        //private void btnSignup_Click(object sender, EventArgs e)
-        //{
-        //    // Open the signup form
-        //    this.Hide();
-        //    SignupPage signupPage = new SignupPage(selectedRole);
-        //    signupPage.Show();
-        //}
+        
     }
 }

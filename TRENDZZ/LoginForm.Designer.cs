@@ -96,7 +96,6 @@
             this.txtPassword.Size = new System.Drawing.Size(348, 35);
             this.txtPassword.TabIndex = 6;
             this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.UseWaitCursor = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Usernamelable

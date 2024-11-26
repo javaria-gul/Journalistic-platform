@@ -2,38 +2,29 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace TRENDZZ
 {
     public partial class SignupPage : Form
-
     {
-        private SqlConnection connection;
-        private string connectionString = "Data Source=localhost;Initial Catalog= TrendzzDB;Integrated Security=True;";
-
+        private DatabaseHelper dbHelper = new DatabaseHelper(); // Instance of DbHelper
         public SignupPage(string userRole)
         {
             InitializeComponent();
             UserSession.Role = userRole;
-            connection = new SqlConnection(connectionString);
-        }
-
-        private void Usernamelabel_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void SignupPage_Load(object sender, EventArgs e)
         {
-            string userRole = UserSession.Role as string;
+            string userRole = UserSession.Role;
 
-            // If the role is Journalist, show the Company Name field
+            // Show the Company Name field only if the role is Journalist
             if (userRole == "Journalist")
             {
                 txtCompanyName.Visible = true;
@@ -46,53 +37,83 @@ namespace TRENDZZ
 
         private void SignupButton_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
-            string email = txtEmail.Text;
-            string userRole = UserSession.Role.ToString();  // Get selected role from session
-            string companyName = txtCompanyName.Text;  // Company name will be empty for non-Journalists
+            // Get form input values
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+            string email = txtEmail.Text.Trim();
+            string userRole = UserSession.Role; // Role from session
+            string companyName = txtCompanyName.Text.Trim();
+            int termsAccepted = chkTerms.Checked ? 1 : 0; // Checkbox for terms
 
-            // Prepare the SQL command to insert data into the database
-            string query = "INSERT INTO Users (Username, Password, Email, Role, CompanyName) VALUES (@Username, @Password, @Email, @Role, @CompanyName)";
-
-            // Use parameterized query to prevent SQL injection
-            SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@Username", username);
-            cmd.Parameters.AddWithValue("@Password", password);  // No password hashing as per your request
-            cmd.Parameters.AddWithValue("@Email", email);
-            cmd.Parameters.AddWithValue("@Role", userRole);
-
-            // If the user is a Journalist, include the company name
-            if (userRole == "Journalist")
+            // **Validation**
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(email))
             {
-                cmd.Parameters.AddWithValue("@CompanyName", companyName);
-            }
-            else
-            {
-                cmd.Parameters.AddWithValue("@CompanyName", DBNull.Value);  // No company name for non-Journalists
+                MessageBox.Show("Please fill in all required fields.");
+                return;
             }
 
-            // Execute the query to insert the data into the database
+            if (!email.Contains("@") || !email.Contains("."))
+            {
+                MessageBox.Show("Please enter a valid email address.");
+                return;
+            }
+
+            // **Password Hashing**
+            string passwordHash;
+            using (var sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                var bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                passwordHash = BitConverter.ToString(bytes).Replace("-", "").ToLower();
+            }
+
+            // **Query**
+            string query = "INSERT INTO Users (Username, PasswordHash, Email, Role, CompanyName, TermsAccepted) " +
+                           "VALUES (@Username, @PasswordHash, @Email, @Role, @CompanyName, @TermsAccepted)";
+
             try
             {
-                connection.Open();
-                cmd.ExecuteNonQuery();
-                connection.Close();
-                MessageBox.Show("User registered successfully!");
+                // Use DbHelper instance for database operations
+                using (MySqlConnection connection = dbHelper.GetConnection())
+                using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@PasswordHash", passwordHash);
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Role", userRole);
+                    cmd.Parameters.AddWithValue("@TermsAccepted", termsAccepted);
 
-                // Redirect the user to the appropriate dashboard based on their role
-                //if (userRole == "Journalist")
-                //{
-                //    this.Hide();
-                //    JournalistDashboard journalistDashboard = new JournalistDashboard();
-                //    journalistDashboard.Show();
-                //}
-                //else if (userRole == "User")
-                //{
-                //    this.Hide();
-                //    UserDashboard userDashboard = new UserDashboard();
-                //    userDashboard.Show();
-                //}
+                    // Include company name only for journalists
+                    if (userRole == "Journalist")
+                    {
+                        cmd.Parameters.AddWithValue("@CompanyName", companyName);
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@CompanyName", DBNull.Value);
+                    }
+
+                    connection.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("User registered successfully!");
+
+                    // **Redirect based on user role**
+                    this.Hide();
+                    // Uncomment the below lines when you have dashboards implemented
+                    // if (userRole == "Journalist")
+                    // {
+                    //     JournalistDashboard journalistDashboard = new JournalistDashboard();
+                    //     journalistDashboard.Show();
+                    // }
+                    // else if (userRole == "User")
+                    // {
+                    //     UserDashboard userDashboard = new UserDashboard();
+                    //     userDashboard.Show();
+                    // }
+                }
+            }
+            catch (MySqlException mysqlEx) when (mysqlEx.Number == 1062) // Handle duplicate entry error
+            {
+                MessageBox.Show("The username or email already exists. Please choose a different one.");
             }
             catch (Exception ex)
             {
@@ -101,3 +122,6 @@ namespace TRENDZZ
         }
     }
 }
+
+
+
