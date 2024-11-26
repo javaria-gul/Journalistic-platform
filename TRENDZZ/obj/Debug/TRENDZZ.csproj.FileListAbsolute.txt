@@ -1,6 +1,5 @@
-C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.exe.config
 C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.exe
-C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.pdb
+C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.exe.config
 C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\MySql.Data.dll
 C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\System.Memory.dll
 C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\System.Threading.Tasks.Extensions.dll
@@ -18,3 +17,7 @@ C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.csproj.CoreCompileI
 C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.csproj.Up2Date
 C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.exe
 C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.pdb
+C:\Users\ICT\Journalistic-platform\TRENDZZ\bin\Debug\TRENDZZ.pdb
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.AdminDashboard.resources
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.JournalistDashboard.resources
+C:\Users\ICT\Journalistic-platform\TRENDZZ\obj\Debug\TRENDZZ.UserDashboard.resources

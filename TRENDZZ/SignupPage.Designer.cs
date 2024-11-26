@@ -39,6 +39,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.SignupButton = new System.Windows.Forms.Button();
+            this.chkTerms = new System.Windows.Forms.CheckBox();
             Signuplabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.Usernamelabel.Size = new System.Drawing.Size(144, 32);
             this.Usernamelabel.TabIndex = 1;
             this.Usernamelabel.Text = "Username";
-            this.Usernamelabel.Click += new System.EventHandler(this.Usernamelabel_Click);
+            
             // 
             // CompanyNamelabel
             // 
@@ -141,13 +142,26 @@
             this.SignupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.SignupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignupButton.ForeColor = System.Drawing.Color.Black;
-            this.SignupButton.Location = new System.Drawing.Point(424, 477);
+            this.SignupButton.Location = new System.Drawing.Point(398, 494);
             this.SignupButton.Name = "SignupButton";
-            this.SignupButton.Size = new System.Drawing.Size(97, 46);
+            this.SignupButton.Size = new System.Drawing.Size(123, 46);
             this.SignupButton.TabIndex = 9;
             this.SignupButton.Text = "Sign Up";
             this.SignupButton.UseVisualStyleBackColor = false;
             this.SignupButton.Click += new System.EventHandler(this.SignupButton_Click);
+            // 
+            // chkTerms
+            // 
+            this.chkTerms.AutoSize = true;
+            this.chkTerms.BackColor = System.Drawing.Color.Transparent;
+            this.chkTerms.Font = new System.Drawing.Font("Modern No. 20", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTerms.ForeColor = System.Drawing.Color.White;
+            this.chkTerms.Location = new System.Drawing.Point(287, 448);
+            this.chkTerms.Name = "chkTerms";
+            this.chkTerms.Size = new System.Drawing.Size(348, 28);
+            this.chkTerms.TabIndex = 10;
+            this.chkTerms.Text = "I agree to the terms and conditions.";
+            this.chkTerms.UseVisualStyleBackColor = false;
             // 
             // SignupPage
             // 
@@ -157,6 +171,7 @@
             this.BackgroundImage = global::TRENDZZ.Properties.Resources.milkyway_8190232;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(978, 744);
+            this.Controls.Add(this.chkTerms);
             this.Controls.Add(this.SignupButton);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
@@ -187,5 +202,6 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button SignupButton;
+        private System.Windows.Forms.CheckBox chkTerms;
     }
 }

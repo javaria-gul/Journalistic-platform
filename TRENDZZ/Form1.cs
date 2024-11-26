@@ -89,5 +89,10 @@ namespace TRENDZZ
                 startX += e.Graphics.MeasureString(text[i].ToString(), font).Width;
             }
         }
+
+        private void lblTrendzz_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

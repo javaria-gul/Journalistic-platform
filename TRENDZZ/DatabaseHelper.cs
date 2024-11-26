@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
@@ -9,7 +10,7 @@ namespace TRENDZZ
 {
     public class DatabaseHelper
     {
-        private string connectionString = "Server=localhost;Database=TrendzzDB;User ID=root;Password=Mysqlpassword123...;";  
+        private string connectionString = "Server=localhost;Database=TrendzzDB;User ID=root;Password=Mysqlpassword123...;";
 
 
         public MySqlConnection GetConnection()
@@ -17,8 +18,22 @@ namespace TRENDZZ
             MySqlConnection conn = new MySqlConnection(connectionString);
             return conn;
         }
+        public static string ComputeSHA256Hash(string rawData)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
 
-   
+
+
         public string ValidateUser(string username, string password)
         {
             string role = null; 

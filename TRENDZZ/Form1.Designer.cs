@@ -45,6 +45,7 @@
             this.lblTrendzz.Size = new System.Drawing.Size(978, 744);
             this.lblTrendzz.TabIndex = 0;
             this.lblTrendzz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTrendzz.Click += new System.EventHandler(this.lblTrendzz_Click);
             // 
             // timerFade
             // 

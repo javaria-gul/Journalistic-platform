@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
+
 
 namespace TRENDZZ
 {
@@ -58,13 +60,14 @@ namespace TRENDZZ
                 return;
             }
 
-            // **Password Hashing**
-            string passwordHash;
-            using (var sha256 = System.Security.Cryptography.SHA256.Create())
+            if (!chkTerms.Checked)
             {
-                var bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-                passwordHash = BitConverter.ToString(bytes).Replace("-", "").ToLower();
+                MessageBox.Show("You must accept the terms and conditions to sign up.", "Terms Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Exit the method
             }
+
+            // **Password Hashing**
+            string passwordHash = DatabaseHelper.ComputeSHA256Hash(password);
 
             // **Query**
             string query = "INSERT INTO Users (Username, PasswordHash, Email, Role, CompanyName, TermsAccepted) " +
@@ -95,20 +98,18 @@ namespace TRENDZZ
                     connection.Open();
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("User registered successfully!");
-
-                    // **Redirect based on user role**
                     this.Hide();
-                    // Uncomment the below lines when you have dashboards implemented
-                    // if (userRole == "Journalist")
-                    // {
-                    //     JournalistDashboard journalistDashboard = new JournalistDashboard();
-                    //     journalistDashboard.Show();
-                    // }
-                    // else if (userRole == "User")
-                    // {
-                    //     UserDashboard userDashboard = new UserDashboard();
-                    //     userDashboard.Show();
-                    // }
+
+                    if (userRole == "Journalist")
+                    {
+                        JournalistDashboard journalistDashboard = new JournalistDashboard();
+                        journalistDashboard.Show();
+                    }
+                    else if (userRole == "User")
+                    {
+                        UserDashboard userDashboard = new UserDashboard();
+                        userDashboard.Show();
+                    }
                 }
             }
             catch (MySqlException mysqlEx) when (mysqlEx.Number == 1062) // Handle duplicate entry error
@@ -119,6 +120,7 @@ namespace TRENDZZ
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+
         }
     }
 }

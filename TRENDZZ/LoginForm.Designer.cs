@@ -38,7 +38,6 @@
             this.passwordlable = new System.Windows.Forms.Label();
             this.Registerbutton = new System.Windows.Forms.Button();
             this.roleLable = new System.Windows.Forms.Label();
-            this.rolelabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -56,7 +55,7 @@
             this.loginlable.BackColor = System.Drawing.Color.Transparent;
             this.loginlable.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginlable.ForeColor = System.Drawing.Color.White;
-            this.loginlable.Location = new System.Drawing.Point(255, 128);
+            this.loginlable.Location = new System.Drawing.Point(255, 78);
             this.loginlable.Name = "loginlable";
             this.loginlable.Size = new System.Drawing.Size(480, 37);
             this.loginlable.TabIndex = 2;
@@ -128,7 +127,7 @@
             this.Registerbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Registerbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registerbutton.ForeColor = System.Drawing.Color.Black;
-            this.Registerbutton.Location = new System.Drawing.Point(402, 639);
+            this.Registerbutton.Location = new System.Drawing.Point(414, 641);
             this.Registerbutton.Name = "Registerbutton";
             this.Registerbutton.Size = new System.Drawing.Size(135, 41);
             this.Registerbutton.TabIndex = 10;
@@ -140,21 +139,13 @@
             // 
             this.roleLable.AutoSize = true;
             this.roleLable.BackColor = System.Drawing.Color.Transparent;
-            this.roleLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roleLable.ForeColor = System.Drawing.Color.White;
-            this.roleLable.Location = new System.Drawing.Point(408, 155);
+            this.roleLable.Location = new System.Drawing.Point(355, 133);
             this.roleLable.Name = "roleLable";
-            this.roleLable.Size = new System.Drawing.Size(0, 32);
+            this.roleLable.Size = new System.Drawing.Size(0, 25);
             this.roleLable.TabIndex = 11;
-            // 
-            // rolelabel
-            // 
-            this.rolelabel.AutoSize = true;
-            this.rolelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.rolelabel.Location = new System.Drawing.Point(505, 165);
-            this.rolelabel.Name = "rolelabel";
-            this.rolelabel.Size = new System.Drawing.Size(0, 20);
-            this.rolelabel.TabIndex = 12;
+            this.roleLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LoginForm
             // 
@@ -164,7 +155,6 @@
             this.BackgroundImage = global::TRENDZZ.Properties.Resources.milkyway_8190232;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(978, 744);
-            this.Controls.Add(this.rolelabel);
             this.Controls.Add(this.roleLable);
             this.Controls.Add(this.Registerbutton);
             this.Controls.Add(this.passwordlable);
@@ -178,6 +168,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +185,5 @@
         private System.Windows.Forms.Label passwordlable;
         private System.Windows.Forms.Button Registerbutton;
         private System.Windows.Forms.Label roleLable;
-        private System.Windows.Forms.Label rolelabel;
     }
 }

@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,26 +19,24 @@ namespace TRENDZZ
             InitializeComponent();
             selectedRole = role; // Store the selected role
         }
-
-        // Optional: Show the selected role on the login form (e.g., as a label)
-        private void LoginForm_Load(object sender, EventArgs e)
+        private void LoginForm_Load_1(object sender, EventArgs e)
         {
             roleLable.Text = $"You are logging in as: {selectedRole}"; // Display role
-            string userRole = UserSession.Role as string;
-
-            // Conditional logic based on the role
-            if (userRole == "Admin")
+            if (selectedRole == "Admin")
             {
-                Registerlable.Visible = false;  // Hide signup label
-                Registerbutton.Visible = false;  // Hide signup button
+                Registerlable.Visible = false;  // Hide the label
+                Registerbutton.Visible = false;  // Hide the button
+                // Alternatively:
+                //Registerbutton.Enabled = false;
+                //MessageBox.Show("Admins are already registered. No need to sign up again.");
             }
             else
             {
-                Registerlable.Visible = true;  // Show signup label
-                Registerbutton.Visible = true;  // Show signup button
+                Registerlable.Visible = true;  // Show the label for users and journalists
+                Registerbutton.Visible = true;  // Show the button for users and journalists
             }
-        }
 
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -65,38 +61,45 @@ namespace TRENDZZ
             string password = txtPassword.Text;
             DatabaseHelper dbHelper = new DatabaseHelper();
 
-            // Verify user credentials from the database (use your DatabaseHelper here)
-            if (dbHelper.VerifyUser(username, password, selectedRole)) // Pass selectedRole as a parameter
+            // Hash the entered password before verifying
+            string hashedPassword = DatabaseHelper.ComputeSHA256Hash(password);
+
+            // Verify user credentials from the database using hashed password
+            if (dbHelper.VerifyUser(username, hashedPassword, selectedRole)) // Pass selectedRole as a parameter
             {
                 MessageBox.Show($"Welcome {username}! Role: {selectedRole}");
 
-                //Redirect to the respective dashboard based on the role
-                //switch (selectedRole)
-                //{
-                //    case "Admin":
-                //        AdminDashboard adminDashboard = new AdminDashboard();
-                //        adminDashboard.Show();
-                //        break;
 
-                //    case "Journalist":
-                //        JournalistDashboard journalistDashboard = new JournalistDashboard();
-                //        journalistDashboard.Show();
-                //        break;
 
-                //    case "User":
-                //        UserDashboard userDashboard = new UserDashboard();
-                //        userDashboard.Show();
-                //        break;
-                //}
+                switch (selectedRole)
+                {
+                    case "Admin":
+                        AdminDashboard adminDashboard = new AdminDashboard();
+                        adminDashboard.Show();
+                        break;
+
+                    case "Journalist":
+                        JournalistDashboard journalistDashboard = new JournalistDashboard();
+                        journalistDashboard.Show();
+                        break;
+
+                    case "User":
+                        UserDashboard userDashboard = new UserDashboard();
+                        userDashboard.Show();
+                        break;
+                }
 
                 this.Hide(); // Close the login form
+
+
             }
             else
             {
                 MessageBox.Show("Invalid credentials or role mismatch. Please try again!");
             }
 
+
+
         }
-        
     }
 }
