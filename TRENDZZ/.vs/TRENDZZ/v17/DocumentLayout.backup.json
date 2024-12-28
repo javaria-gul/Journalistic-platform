@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\journalistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:journalistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\journalistdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:journalistdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\journalistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:journalistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,32 +47,12 @@
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\journalistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:journalistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\roleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:roleselectionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,11 +63,11 @@
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:signuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|c:\\users\\ict\\journalistic-platform\\trendzz\\signuppage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\signuppage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88747D8D-BCE4-4A4E-9752-05E90DB20585}|TRENDZZ.csproj|solutionrelative:signuppage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -78,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,15 +94,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserDashboard.cs",
-              "RelativeDocumentMoniker": "UserDashboard.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserDashboard.cs [Design]",
-              "RelativeToolTip": "UserDashboard.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "JournalistDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.cs",
+              "RelativeDocumentMoniker": "JournalistDashboard.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.cs*",
+              "RelativeToolTip": "JournalistDashboard.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:34:46.122Z",
+              "WhenOpened": "2024-12-28T10:13:04.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JournalistDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "JournalistDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.Designer.cs*",
+              "RelativeToolTip": "JournalistDashboard.Designer.cs*",
+              "ViewState": "AgIAAAgAAACgMjMzMzMvwJIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T10:05:09.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JournalistDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.cs",
+              "RelativeDocumentMoniker": "JournalistDashboard.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.cs [Design]*",
+              "RelativeToolTip": "JournalistDashboard.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T09:22:20.631Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:22:36.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -110,70 +161,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T14:41:41.685Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "JournalistDashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.cs",
-              "RelativeDocumentMoniker": "JournalistDashboard.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\JournalistDashboard.cs [Design]",
-              "RelativeToolTip": "JournalistDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:29:42.037Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignupPage.cs",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
-              "RelativeDocumentMoniker": "SignupPage.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
-              "RelativeToolTip": "SignupPage.cs",
-              "ViewState": "AgIAAGsAAABgWWZmZiYgwGwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T17:07:57.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T16:22:36.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T19:32:34.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T19:32:24.219Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -185,7 +185,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "UserDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserDashboard.cs",
+              "RelativeDocumentMoniker": "UserDashboard.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserDashboard.cs [Design]",
+              "RelativeToolTip": "UserDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:34:46.122Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAAoAAAAAMDMzMzMLwAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:32:34.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignupPage.cs",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
+              "RelativeDocumentMoniker": "SignupPage.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
+              "RelativeToolTip": "SignupPage.cs",
+              "ViewState": "AgIAAGAAAADAY2ZmZuYrwGQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T17:07:57.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:32:24.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "LoginForm.Designer.cs",
@@ -193,12 +240,11 @@
               "RelativeToolTip": "LoginForm.Designer.cs",
               "ViewState": "AgIAALwAAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:46:49.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T14:46:49.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "RoleSelectionForm.cs",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs",
               "RelativeDocumentMoniker": "RoleSelectionForm.cs",
@@ -206,25 +252,11 @@
               "RelativeToolTip": "RoleSelectionForm.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAANwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T13:51:52.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T13:51:52.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\DatabaseHelper.cs",
-              "RelativeToolTip": "DatabaseHelper.cs",
-              "ViewState": "AgIAAAQAAADAMTMzMzMbwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T14:41:41.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\UserSession.cs",
               "RelativeDocumentMoniker": "UserSession.cs",
@@ -232,12 +264,11 @@
               "RelativeToolTip": "UserSession.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T17:27:36.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-24T17:27:36.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -250,19 +281,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "SignupPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs",
               "RelativeDocumentMoniker": "SignupPage.cs",
               "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.cs [Design]",
               "RelativeToolTip": "SignupPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T16:52:08.066Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-24T16:52:08.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "SignupPage.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\SignupPage.Designer.cs",
               "RelativeDocumentMoniker": "SignupPage.Designer.cs",
@@ -270,24 +300,22 @@
               "RelativeToolTip": "SignupPage.Designer.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAYwEQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:26:14.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T13:26:14.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "RoleSelectionForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs",
               "RelativeDocumentMoniker": "RoleSelectionForm.cs",
               "ToolTip": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\RoleSelectionForm.cs [Design]",
               "RelativeToolTip": "RoleSelectionForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T09:57:01.11Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-23T09:57:01.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ICT\\Journalistic-platform\\TRENDZZ\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
