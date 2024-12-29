@@ -12,9 +12,11 @@ namespace TRENDZZ
 {
     public partial class UserDashboard : Form
     {
-        public UserDashboard()
+        private int userId;
+        public UserDashboard(int loggedInUserId)
         {
             InitializeComponent();
+            userId = loggedInUserId; // Store user ID
         }
     }
 }

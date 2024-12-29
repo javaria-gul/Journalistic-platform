@@ -143,3 +143,139 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2024-12-09 21:39:47
+
+
+
+CREATE DATABASE trendzz;
+USE trendzz;
+-- Modified Database Schema for Trendzz
+
+-- Drop existing tables if needed for a fresh start
+DROP TABLE IF EXISTS `notifications`;
+DROP TABLE IF EXISTS `trendingtags`;
+DROP TABLE IF EXISTS `followers`;
+DROP TABLE IF EXISTS `posts`;
+DROP TABLE IF EXISTS `comments`;
+DROP TABLE IF EXISTS `likes`;
+DROP TABLE IF EXISTS `useractivitylogs`;
+DROP TABLE IF EXISTS `users`;
+
+-- Users Table
+CREATE TABLE `users` (
+  `UserID` INT NOT NULL AUTO_INCREMENT,
+  `Username` VARCHAR(50) NOT NULL,
+  `PasswordHash` VARCHAR(255) NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  `Role` ENUM('Admin', 'Journalist', 'User') NOT NULL DEFAULT 'User',
+  `CompanyName` VARCHAR(255) DEFAULT NULL,
+  `TermsAccepted` TINYINT(1) NOT NULL DEFAULT '0',
+  `AccountStatus` VARCHAR(20) NOT NULL DEFAULT 'Active',
+  `ProfilePicture` VARCHAR(255) DEFAULT NULL,
+  `Bio` TEXT,
+  `ArticlesCount` INT DEFAULT 0, -- Tracks number of articles posted
+  `FollowersCount` INT DEFAULT 0, -- Tracks followers count
+  `FollowingCount` INT DEFAULT 0, -- Tracks following count
+  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`UserID`),
+  UNIQUE KEY `Username` (`Username`),
+  UNIQUE KEY `Email` (`Email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Posts Table
+CREATE TABLE `posts` (
+  `PostID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `Title` VARCHAR(255) NOT NULL,
+  `Content` TEXT NOT NULL,
+  `IsDraft` TINYINT(1) DEFAULT 1, -- 1 for draft, 0 for published
+  `PublishedAt` TIMESTAMP NULL DEFAULT NULL,
+  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`PostID`),
+  FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Comments Table
+CREATE TABLE `comments` (
+  `CommentID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `PostID` INT NOT NULL,
+  `CommentText` TEXT NOT NULL,
+  `CommentedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`CommentID`),
+  FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`),
+  FOREIGN KEY (`PostID`) REFERENCES `posts` (`PostID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Likes Table
+CREATE TABLE `likes` (
+  `LikeID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `PostID` INT NOT NULL,
+  `LikedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`LikeID`),
+  FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`),
+  FOREIGN KEY (`PostID`) REFERENCES `posts` (`PostID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Followers Table
+CREATE TABLE `followers` (
+  `FollowerID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `FollowedUserID` INT NOT NULL,
+  `FollowedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`FollowerID`),
+  FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`),
+  FOREIGN KEY (`FollowedUserID`) REFERENCES `users` (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Notifications Table
+CREATE TABLE `notifications` (
+  `NotificationID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `Message` TEXT NOT NULL,
+  `IsRead` TINYINT(1) DEFAULT 0, -- 0 for unread, 1 for read
+  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`NotificationID`),
+  FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Trending Tags Table
+CREATE TABLE `trendingtags` (
+  `TagID` INT NOT NULL AUTO_INCREMENT,
+  `TagName` VARCHAR(50) NOT NULL,
+  `PopularityScore` INT DEFAULT 0, -- Algorithm-driven score
+  `CreatedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`TagID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- User Activity Logs Table
+CREATE TABLE `useractivitylogs` (
+  `LogID` INT NOT NULL AUTO_INCREMENT,
+  `UserID` INT NOT NULL,
+  `Activity` VARCHAR(255) NOT NULL,
+  `Timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`LogID`),
+  FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ALTER TABLE `users` 
+ADD COLUMN `LastLogin` TIMESTAMP NULL DEFAULT NULL,
+ADD COLUMN `Preferences` JSON DEFAULT NULL;
+ALTER TABLE `posts` 
+ADD COLUMN `Tags` VARCHAR(255) DEFAULT NULL,
+ADD COLUMN `ViewCount` INT DEFAULT 0;
+ALTER TABLE `comments`
+ADD COLUMN `ParentCommentID` INT DEFAULT NULL,
+ADD FOREIGN KEY (`ParentCommentID`) REFERENCES `comments`(`CommentID`);
+ALTER TABLE `followers` 
+ADD COLUMN `EdgeWeight` INT DEFAULT 1;
+ALTER TABLE `notifications` 
+ADD COLUMN `Type` VARCHAR(50) DEFAULT NULL,
+ADD COLUMN `SourceUserID` INT DEFAULT NULL,
+ADD FOREIGN KEY (`SourceUserID`) REFERENCES `users`(`UserID`);
+ALTER TABLE `trendingtags`
+ADD COLUMN `ParentTagID` INT DEFAULT NULL,
+ADD FOREIGN KEY (`ParentTagID`) REFERENCES `trendingtags`(`TagID`);
+
+

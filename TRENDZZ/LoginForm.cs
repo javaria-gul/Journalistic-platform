@@ -61,45 +61,42 @@ namespace TRENDZZ
             string password = txtPassword.Text;
             DatabaseHelper dbHelper = new DatabaseHelper();
 
-            // Hash the entered password before verifying
+            // Hash the entered password
             string hashedPassword = DatabaseHelper.ComputeSHA256Hash(password);
 
-            // Verify user credentials from the database using hashed password
-            if (dbHelper.VerifyUser(username, hashedPassword, selectedRole)) // Pass selectedRole as a parameter
+            // Verify user credentials and get User ID and Role
+            int userId = dbHelper.GetUserId(username, hashedPassword, selectedRole);
+
+            if (userId != -1) // -1 means invalid credentials
             {
                 MessageBox.Show($"Welcome {username}! Role: {selectedRole}");
 
-
-
+                // Open the respective dashboard based on role
                 switch (selectedRole)
                 {
                     case "Admin":
-                        AdminDashboard adminDashboard = new AdminDashboard();
+                        AdminDashboard adminDashboard = new AdminDashboard(userId); // Pass User ID
                         adminDashboard.Show();
                         break;
 
                     case "Journalist":
-                        JournalistDashboard journalistDashboard = new JournalistDashboard();
+                        JournalistDashboard journalistDashboard = new JournalistDashboard(userId); // Pass User ID
                         journalistDashboard.Show();
                         break;
 
                     case "User":
-                        UserDashboard userDashboard = new UserDashboard();
+                        UserDashboard userDashboard = new UserDashboard(userId); // Pass User ID
                         userDashboard.Show();
                         break;
                 }
 
-                this.Hide(); // Close the login form
-
-
+                this.Hide(); // Hide the login form
             }
             else
             {
                 MessageBox.Show("Invalid credentials or role mismatch. Please try again!");
             }
-
-
-
         }
+
     }
 }

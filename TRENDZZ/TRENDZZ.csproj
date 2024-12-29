@@ -155,12 +155,19 @@
   <ItemGroup>
     <None Include="Resources\icons8-back-24.png" />
     <None Include="Resources\icons8-back-50.png" />
+    <None Include="Resources\defaultProfilePic.png" />
+    <None Include="Resources\dislike_icon_filled.png" />
+    <None Include="Resources\dislike_icon.png" />
+    <None Include="Resources\comment_icon.png" />
     <Content Include="Resources\icons8_camera_30.png" />
     <Content Include="Resources\icons8_camera_50.png" />
     <Content Include="Resources\icons8_heart_50.png" />
     <Content Include="Resources\icons8_home_50.png" />
     <Content Include="Resources\icons8_pen_30.png" />
     <Content Include="Resources\icons8_pen_48.png" />
+    <None Include="Resources\placeholder_image.png" />
+    <None Include="Resources\like_icon_filled.png" />
+    <None Include="Resources\like_icon.png" />
     <Content Include="Resources\plus.png" />
     <Content Include="Resources\icons8_search_20.png" />
     <Content Include="Resources\icons8_search_50.png" />

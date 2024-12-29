@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -31,6 +32,34 @@ namespace TRENDZZ
                 return builder.ToString();
             }
         }
+
+        public int GetUserId(string username, string hashedPassword, string role)
+        {
+            int userId = -1; // Default invalid ID
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                string query = "SELECT UserID FROM users WHERE Username = @Username AND PasswordHash = @Password AND Role = @Role";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@Username", username);
+                cmd.Parameters.AddWithValue("@Password", hashedPassword);
+                cmd.Parameters.AddWithValue("@Role", role);
+
+                conn.Open();
+                object result = cmd.ExecuteScalar(); // Fetch UserID
+
+                if (result != null) // If valid user
+                {
+                    userId = Convert.ToInt32(result);
+                }
+
+                conn.Close();
+            }
+
+            return userId; // Return User ID or -1 if invalid
+        }
+
 
 
 

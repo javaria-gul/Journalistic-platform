@@ -71,7 +71,7 @@ namespace TRENDZZ
 
             // **Query**
             string query = "INSERT INTO Users (Username, PasswordHash, Email, Role, CompanyName, TermsAccepted) " +
-                           "VALUES (@Username, @PasswordHash, @Email, @Role, @CompanyName, @TermsAccepted)";
+                           "VALUES (@Username, @PasswordHash, @Email, @Role, @CompanyName, @TermsAccepted);";
 
             try
             {
@@ -97,17 +97,23 @@ namespace TRENDZZ
 
                     connection.Open();
                     cmd.ExecuteNonQuery();
+
+                    // **Fetch the User ID of the inserted record**
+                    cmd.CommandText = "SELECT LAST_INSERT_ID();"; // Retrieve the last inserted User ID
+                    int userId = Convert.ToInt32(cmd.ExecuteScalar()); // Fetch User ID
+
                     MessageBox.Show("User registered successfully!");
                     this.Hide();
 
+                    // **Open the respective dashboard based on role**
                     if (userRole == "Journalist")
                     {
-                        JournalistDashboard journalistDashboard = new JournalistDashboard();
+                        JournalistDashboard journalistDashboard = new JournalistDashboard(userId); // Pass User ID
                         journalistDashboard.Show();
                     }
                     else if (userRole == "User")
                     {
-                        UserDashboard userDashboard = new UserDashboard();
+                        UserDashboard userDashboard = new UserDashboard(userId); // Pass User ID
                         userDashboard.Show();
                     }
                 }
@@ -120,8 +126,9 @@ namespace TRENDZZ
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-
         }
+
+
     }
 }
 
