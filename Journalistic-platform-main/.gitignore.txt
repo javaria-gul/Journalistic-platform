@@ -1,0 +1,53 @@
+# Ignore Visual Studio temporary files, build results, and
+# personal settings
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.obj
+*.log
+
+# Ignore build directories
+bin/
+obj/
+Debug/
+Release/
+
+# Ignore package files
+*.nupkg
+*.snupkg
+packages/
+*.dll
+*.exe
+
+# Ignore runtime files
+*.db
+*.sqlite
+*.sql
+*.mdf
+*.ldf
+
+# Ignore environment settings
+.env
+
+# Ignore compiled code
+*.class
+
+# Ignore generated files
+*.g.*
+*.generated.*
+
+# Ignore lock files
+project.lock.json
+package-lock.json
+
+# Ignore IDE-specific settings
+.idea/
+*.csproj.user
+
+# Ignore temporary files
+*.tmp
+*.temp
+~$*
+*.bak
